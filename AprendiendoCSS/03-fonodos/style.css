@@ -1,0 +1,9 @@
+body{
+    background-color: rebeccapurple;
+
+}
+
+#caja{
+    border: 3px solid black;
+    padding: 10px;
+}

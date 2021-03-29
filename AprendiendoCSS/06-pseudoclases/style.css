@@ -1,0 +1,58 @@
+body{
+    background: rgb(132, 221, 191);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+ul li {
+    font-size: 30px;
+}
+
+ul li:first-child{
+    color: purple;
+
+}
+ul li:nth-child(2) {
+    color: red;
+}
+
+
+ul li:nth-child(3) {
+    color: rgb(185, 14, 114);
+}
+
+ul li:last-child{
+    color: rgb(184, 100, 22);
+}
+
+#mi-enlace{
+    color: black;
+    font-size: 30px;
+}
+/*cuando no he visitado el enlace*/
+#mi-enlace:link{
+    color:orangered;
+}
+/*cuando visito el */
+#mi-enlace:visited{
+    color:purple;
+}
+/*cuando paso el mouse por encima*/
+#mi-enlace:hover{
+    color: rgb(237, 241, 10);
+}
+/*me cabia al dejarlo presionado*/
+#mi-enlace:active{
+    color:green;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+input[type="text"]{
+    margin-top: 30px;
+    padding: 4;
+}
+/*me pone el input en rojo cuando voy a escribir*/
+input[type="text"]:focus{
+
+    border: 4px dashed red;
+
+}

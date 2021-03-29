@@ -1,0 +1,43 @@
+#menu {
+  height: 50px;
+}
+#menu ul {
+  text-decoration: none;
+  list-style: none;
+  line-height: 50px;
+}
+/* #content{
+    width: 100%;
+} */
+
+.item {
+  height: 150px;
+}
+.footer {
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+}
+
+.lateral {
+  height: 500px;
+}
+
+.lateral > div {
+  height: calc(500px / 3);
+}
+
+.h-25 {
+  height: 12% !important;
+}
+
+.m-3 {
+  margin: 8px !important;
+}
+
+.pagination {
+  padding-left: 256px;
+}
+.w-25 {
+    width: 28%!important;
+}

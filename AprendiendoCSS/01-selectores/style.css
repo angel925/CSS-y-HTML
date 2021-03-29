@@ -1,0 +1,83 @@
+/*
+######### SELECTORES ##########
+SELECTOR UNIVERSAL*/
+* {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+/*Selector de etiqueta*/
+h1 {
+  background: red;
+  color: aliceblue;
+  padding: 10px;
+}
+a {
+  font-size: 18px;
+  color: rgb(151, 32, 161);
+  text-decoration: none;
+}
+footer a {
+  font-size: 20px;
+  color: rgb(21, 230, 195);
+  text-decoration: none;
+}
+/*Selector de id*/
+#descripcion {
+  border: 1px solid black;
+  background: rgb(116, 223, 187);
+  padding: 10px;
+}
+/*Selector de clae*/
+.parrafo {
+  background-color: rgb(236, 2, 33);
+  font-style: italic;
+  text-decoration: underline;
+  font-weight: bold;
+}
+.parrafo2 {
+  background-color: blueviolet;
+  color: black;
+  padding: 13px;
+}
+.parrafo3 {
+  background-color: orange;
+  color: black;
+  padding: 1px;
+}
+/*selector de atributo*/
+#usuario form {
+  border: 5px solid blue;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  padding: 20px;
+}
+#usuario form * {
+  display: block;
+}
+input[type="text"] {
+  margin-bottom: 5px;
+  padding: 5px;
+  width: 200px;
+}
+input[type="submit"] {
+  background: purple;
+  color: black;
+  padding: 10px;
+  font-size: 15px;
+  text-transform: uppercase;
+  border: 1px solid black;
+  cursor: pointer;
+  border-radius: 30px;
+}
+/*selector hijo*/
+#menu > li > a {
+  font-size: 18px;
+  color: rgb(216, 20, 20);
+  text-decoration: none;
+}
+/*Prioridad*/
+#saludo h1 {
+  background: rgb(255, 0, 255) !important;
+}
+h1 {
+  background: rgb(15, 5, 15);
+}

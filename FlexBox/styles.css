@@ -1,0 +1,67 @@
+body {
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#layout {
+  display: flex;
+
+  /*  flex-wrap: wrap; 
+    flex-direction: row;
+    flex-flow: column-reverse;
+    */
+
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+
+  height: 600px;
+  align-items: flex-start;
+
+  border: 3px solid black;
+  padding: 5px;
+}
+/*alinear el contenido con
+justify-content:space-between,flex-end, flex-start, space-around;
+*/
+.caja {
+  /* height: 120px; */
+
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  color: rgb(0, 0, 0);
+  padding: 20px;
+  border: 3px solid aquamarine;
+  margin: 10px;
+  background: #ccc;
+}
+
+/*para ordernarlas es ejor contar en reversa y enumerarlas en ese orden 4 3 2 1 la mayor siempre va hacer la ultima
+order:4;
+order:3;
+order:2;
+order:1;
+flex-grow: 10; // el espacio que va a ocupar en la caja
+
+
+flex-shrink: 7; // para recucir espacio tamaño
+*/
+.red {
+  align-self: flex-start;
+  background: red;
+}
+
+.green {
+    background: green;
+    margin-top: 10%;
+}
+
+.blue {
+    
+align-self: center;
+  background: blue;
+}
+
+.orange {
+    align-self: flex-end;
+  background: orangered;
+}

@@ -1,0 +1,22 @@
+@font-face{
+    font-family: DotGothic16FuenteCustom;
+    src: url('fonts/DotGothic16/DotGothic16-Regular.ttf');
+}
+body{
+    background:rgb(211, 66, 216);
+}
+h1{
+    font-family: 'Mansalva', cursive;
+    font-style: Oblique;/*formas de fun*/
+    text-transform: uppercase; /*pasarla a mayuscula*/
+    font-size: 45px;
+}
+h3{
+    font-family:'DotGothic16', sans-serif;
+    font-size: 24px;/*tamaño*/
+}
+p{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 29px;
+    font-weight: 600;/*negrilla*/
+}

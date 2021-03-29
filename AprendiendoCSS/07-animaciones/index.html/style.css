@@ -1,0 +1,60 @@
+#boton {
+  display: block;
+  padding: 5px 15px;
+  background: #61DAFB;
+  color: inherit;
+  width: 83px;
+  height: 20px;
+  text-align: center;
+  font-family: "Poppins-SemiBold", Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  text-decoration: none;
+  border: none;
+  border-radius: 8px;
+  transition: all 50ms; /* 10ms mas rapido 50ms menos rapido 100ms menos menos rapido*/
+}
+
+#boton:hover {
+  background: #ff441f;
+  border: none;
+}
+
+#caja {
+  margin-top: 150px;
+  width: 250px;
+  height: 250px;
+  background: lightblue;
+  color: white;
+  border: 5px solid black;
+  font-size: 20px;
+  text-align: center;
+  line-height: 250px;
+  animation-name: desplazamiento;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function:linear;
+}
+
+@keyframes desplazamiento {
+  0% {
+    margin-left: 0px;
+    transform: rotate(0deg);
+  }
+  50% {
+      margin-left: 1000px;
+      transform: rotate(360deg);
+      border-radius: 999px;
+
+  }
+  75%{
+      background: red;
+
+  }
+  77%{
+      border: 10px dashed;
+  }
+  100% {
+    margin-left: 0px;
+    transform: rotate(0deg);;
+  }
+}

@@ -1,0 +1,304 @@
+* {
+  text-decoration: none;
+  margin: 0px;
+  padding: 0px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#container {
+  width: 90%;
+  height: auto;
+  margin: 0px auto;
+  border: 1px solid rgba(222, 225, 226, 0.8);
+  box-shadow: 0px 0px 10px #ccc;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  min-height: 600px;
+}
+
+#header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+
+  height: 120px;
+  border-bottom: 1px solid rgba(222, 225, 226, 0.8);
+}
+
+.logo {
+  flex-grow: 1;
+  flex-basis: 30%;
+
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-style: italic;
+  font-weight: 900;
+  font-size: 35px;
+  padding: 10px;
+  margin-left: 20px;
+  color: black;
+  text-shadow: 1px 1px 0px #ccc;
+  text-transform: uppercase;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-style: italic;
+  font-weight: 900;
+  font-size: 35px;
+}
+
+.logo h1 {
+  flex-grow: 1;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-style: italic;
+  font-weight: 900;
+  font-size: 35px;
+}
+
+#menu {
+  flex-grow: 1;
+  flex-basis: 30%;
+  height: 100%;
+}
+
+#menu > ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 13px;
+  list-style: none;
+  height: 100%;
+}
+
+#menu a {
+  text-transform: uppercase;
+  color: #444;
+  padding: 15px;
+  transition: all 300ms;
+}
+
+#menu a:hover {
+  background-color: rgb(82, 82, 82);
+  color: rgb(0, 192, 96);
+  border-radius: 25px 5px 25px 5px;
+  font-style: bold;
+}
+
+#content {
+  display: flex;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  
+}
+#projects {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  flex-basis: 80%;
+  transition: all 400ms;
+}
+
+.project{
+  flex-grow: 1;
+  margin-right: 12px;
+  margin-bottom: 25px;
+  transition: all 400ms;
+  
+} 
+
+#projects article:hover{
+  transform: scale(1.2,1.2);
+  text-align: center;
+}
+
+.project img{
+  width: 100%;
+}
+
+.project-info a{
+  font-size: 16px;
+  color: #444;
+  transition: all 300ms;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+  "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  transition: all 400ms;
+}
+
+.project-info a:hover{
+  color: rgb(0, 192, 96);
+  
+}
+
+.project-info p{
+  font-size: 14px;
+  color: #444;
+  transition: all 300ms;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  transition: all 400ms;
+
+}
+
+.project-info p:hover{
+  color: rgb(117, 121, 121);
+}
+
+#aside{
+  flex-basis: 15%;
+  margin-right: 30px;
+  padding: 15px;
+
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+#aside h2{
+  display: block;
+  width: 100%;
+  margin-top: -10px;
+  font-size: 17px;
+ 
+  color: #444;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid rgb(189, 189, 189);
+  text-align: center;
+}
+
+#aside ul{
+  list-style: none;
+}
+#aside ul li{
+  padding-bottom: 20px;
+}
+#aside a{
+  display: block;
+  font-size: 20px;
+  font-weight: 10;
+  padding: 31px;
+  background: #eee;
+  color:#444;
+  text-align: center;
+  text-transform:uppercase ;
+  transition: all 300ms;
+
+}
+
+#aside a:hover{
+  background: #444;
+  color: rgb(0, 192, 96);
+  border-radius: 0px 50px 0px 50px;
+  
+}
+
+#footer{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+
+  height: 120px;
+  align-items: center;
+  border-top: 1px solid rgba(222, 225, 226, 0.8);
+}
+#footer .logo{
+  order: 2;
+  opacity: 0.5;
+  flex-basis: auto;
+  flex-grow: 1;
+  text-align: end;
+  margin-right: 20px;
+}
+#footer .info{
+  order:1;
+  flex-grow: 1;
+  margin-left: 20px;
+
+}
+
+/*Responsive desing*/
+
+@media (max-width:977px){
+
+  .logo{
+    flex-basis: 10%;
+
+  }
+}
+
+@media (max-width:914px){
+
+  .logo{
+    flex-basis: 80%;
+    text-align: center;
+  }
+
+  #menu > ul{
+    margin-top: 9px;
+    align-items: flex-start;
+    justify-content: space-evenly;
+  }
+
+  #footer .logo{
+    flex-grow: 1;
+    order: 2;
+    flex-basis: 100%;
+    text-align: center;
+    margin: 0%;
+  }
+  #footer .info{
+    flex-grow: 1;
+    order: 2;
+    margin-left: 20px;
+    color:#444;
+    flex-basis: 100%;
+    text-align: center;
+    margin: 0%;
+  }
+}
+
+@media(max-width:778px){
+
+  #content {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content:space-between;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    
+  }
+
+  #aside{
+
+    margin-right: 0%;
+
+  }
+  #aside h2{
+    font-size: 24px;
+  }
+
+  #aside ul{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+  }
+
+  #aside ul li{
+    flex-grow: 1;
+    margin-left: 5px;
+    margin-right: 5px;
+    
+  }
+  #aside a{
+    font-size: 14px;
+    padding: 19px;
+  }
+  .project{
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+
+}

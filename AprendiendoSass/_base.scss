@@ -1,0 +1,114 @@
+/*Variables*/
+$fuente-tipica: sans-serif,Helvetica,Arial;
+$color-fondo: #ccc;
+$color-titles: rgb(239, 47, 92);
+$color-parrafos: rgb(163, 219, 10);
+$color-subtitulos: rgb(0, 0, 0);
+$color-h3: blue;
+
+body {
+    background-color: $color-fondo;
+}
+
+h1 {
+    font-family: $fuente-tipica;
+    color: $color-titles;
+}
+
+p {
+    color: $color-parrafos;
+}
+
+/*Anidacion, seleccionar elementos dentro de otros y poder darles valores estando anidados*/
+.caja {
+    border: 1px solid black;
+    width: 50%;
+    text-align: center;
+    margin: 0px auto;
+    background-color: aquamarine;
+    padding: 10px;
+
+    h1 {
+        color: $color-titles;
+    }
+
+    h2 {
+        color: $color-subtitulos;
+    }
+
+    .info {
+
+        p {
+            font-size: 25px;
+        }
+    }
+    .autor{
+        h3{
+            color: $color-h3;
+        }
+    }
+}
+
+//mixins / Funciones
+
+@mixin crearBordes(){
+    border: 5px solid slateblue;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px black;
+}
+
+.caja {
+    @include crearBordes();
+}
+//parametrizar un mixins o funcion
+@mixin crearBordes2($color, $size,$shadow){
+    border: $size solid $color;
+    border-radius: $size;
+    box-shadow: 0px 0px  $size $shadow;
+}
+.lista{
+    @include crearBordes2(red, 5px, green );
+}
+
+//herencia
+%alert-normal{
+    border: 1px solid red;
+    background: lawngreen;
+    color: #ccc;
+    padding: 10px;
+    width: 50%;
+    height: 50px;
+    margin: 20px auto;
+    
+}
+
+.alert{
+    @extend %alert-normal; 
+}
+
+.alert-danger{
+
+    @extend %alert-normal;
+    color: red;
+    border-color: red;
+    background: #eee;
+}
+.alert-sucess{
+    @extend %alert-normal;
+    color: green;
+    border-color: green;
+    background: #eee;
+}
+
+//operadores
+/*
+
++ suma
+- restas
+/ divisiones
+* multiplicaciones
+
+todp esto aplica para pixeles
+
+
+*/
